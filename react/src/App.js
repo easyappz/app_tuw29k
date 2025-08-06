@@ -1,16 +1,25 @@
-import logo from './logo.svg';
-import ErrorBoundary from './ErrorBoundary';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import HomePage from './pages/HomePage';
+import LobbyPage from './pages/LobbyPage';
+import SettingsPage from './pages/SettingsPage';
+import MapPage from './pages/MapPage';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <ErrorBoundary>
+    <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/lobby" element={<LobbyPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/map" element={<MapPage />} />
+        </Routes>
       </div>
-    </ErrorBoundary>
+    </Router>
   );
 }
 
