@@ -1,0 +1,33 @@
+.player {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.player-body {
+  width: 30px;
+  height: 30px;
+  background-color: #2d3436;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.player-gun {
+  width: 10px;
+  height: 25px;
+  background-color: #636e72;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  transform: rotate(90deg);
+  border-radius: 2px;
+}
+
+.player.shooting .player-gun {
+  background-color: #d63031;
+  box-shadow: 0 0 10px rgba(214, 48, 49, 0.8);
+}

@@ -1,0 +1,9 @@
+.bullet {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  background-color: #d63031;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(214, 48, 49, 0.5);
+  transition: transform 0.1s ease;
+}

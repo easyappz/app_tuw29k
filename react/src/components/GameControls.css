@@ -1,0 +1,21 @@
+.game-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(45, 52, 54, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.control-info h3 {
+  margin: 0 0 10px 0;
+  color: #ff7675;
+}
+
+.control-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
