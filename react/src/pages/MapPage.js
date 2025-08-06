@@ -82,10 +82,10 @@ function MapPage() {
         let newY = prevPosition.y;
         const speed = 5;
 
-        if (keysPressed.current['w']) newY -= speed;
-        if (keysPressed.current['s']) newY += speed;
-        if (keysPressed.current['a']) newX -= speed;
-        if (keysPressed.current['d']) newX += speed;
+        if (keysPressed.current['w'] || keysPressed.current['arrowup']) newY -= speed;
+        if (keysPressed.current['s'] || keysPressed.current['arrowdown']) newY += speed;
+        if (keysPressed.current['a'] || keysPressed.current['arrowleft']) newX -= speed;
+        if (keysPressed.current['d'] || keysPressed.current['arrowright']) newX += speed;
 
         newX = Math.max(0, Math.min(760, newX));
         newY = Math.max(0, Math.min(560, newY));
